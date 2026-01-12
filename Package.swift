@@ -7,10 +7,11 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
-        .library(
-            name: "ApxorSDK",
-            targets: ["ApxorSDK"]
-        )
+        .library(name: "ApxorSDK", targets: ["ApxorSDK"]),
+        .library(name: "APXContextEvaluator", targets: ["APXContextEvaluator"]),
+        .library(name: "APXRTAPlugin", targets: ["APXRTAPlugin"]),
+        .library(name: "APXWYSIWYGPlugin", targets: ["APXWYSIWYGPlugin"]),
+        .library(name: "APXSurveyPlugin", targets: ["APXSurveyPlugin"])
     ],
     targets: [
         .binaryTarget(
