@@ -9,6 +9,7 @@ let package = Package(
     products: [
         .library(name: "ApxorSDK", targets: ["ApxorSDK"]),
         .library(name: "APXContextEvaluator", targets: ["APXContextEvaluator"]),
+        .library(name: "APXRTAPlugin", targets: ["APXRTAPlugin"]),
         .library(name: "APXWYSIWYGPlugin", targets: ["APXWYSIWYGPlugin"]),
         .library(name: "APXSurveyPlugin", targets: ["APXSurveyPlugin"])
     ],
@@ -22,6 +23,11 @@ let package = Package(
             name: "APXContextEvaluator",
             url: "https://repo.apxor.com/artifactory/libs-release-ios/ce/10531/ApxoriOSSDK-CE-10531.zip",
             checksum: "4a465a502088478e26e248df71808a5657363b8a60b6cec69d335854f72d7f76"
+        ),
+        .binaryTarget(
+            name: "APXRTAPlugin",
+            url: "https://repo.apxor.com/artifactory/libs-release-ios/rta/10949/ApxoriOSSDK-RTA-10949.zip",
+            checksum: "0a67b6310340254ee3baf76d25964d1b0bd94815d7bb5822317ab5fa46861702"
         ),
         .binaryTarget(name: "APXWYSIWYGPlugin",
             url: "https://repo.apxor.com/artifactory/libs-release-ios/wysiwyg/10275/ApxoriOSSDK-WYSIWYG-10275.zip",
